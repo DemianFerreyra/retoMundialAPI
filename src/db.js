@@ -36,7 +36,7 @@ sequelize.models = Object.fromEntries(capsEntries);
 
 const { Game, Result } = sequelize.models;
 
-Result.hasMany(Game, {through : "results_game"});
+Game.hasMany(Result);
 
 module.exports = {
   ...sequelize.models,
