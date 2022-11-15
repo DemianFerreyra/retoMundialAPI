@@ -9,11 +9,11 @@ module.exports = (sequelize) => {
         allowNull: false,
     },
     team1Result: {
-      type: DataTypes.INT,
+      type: DataTypes.INTEGER,
       allowNull: false,
     },
     team2Result: {
-        type: DataTypes.INT,
+        type: DataTypes.INTEGER,
       allowNull: false,
     }
   });
