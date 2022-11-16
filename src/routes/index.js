@@ -1,20 +1,8 @@
 const { Router } = require("express");
 const router = Router();
 //import rutas
-//const routerEspecifico = require("./router.js");
+const championsRouter = require("./champions.js");
 
-//router.use("/rutaEspecifica", RouterEspecifico);
+router.use("/champions", championsRouter);
 
 module.exports = router;
-
-
-//estructura del router:
-// const { Router } = require("express");
-// const router = Router();
-// const { Character } = require("../db");
-
-// router.get("/", async (req, res) => {
-
-// });
-
-// module.exports = router;
