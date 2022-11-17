@@ -6,5 +6,6 @@ const resultsRouter = require("./results.js")
 
 router.use("/champions", championsRouter);
 router.use("/results", resultsRouter);
+router.use("/games", resultsRouter);
 
 module.exports = router;
