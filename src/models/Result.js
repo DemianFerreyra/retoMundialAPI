@@ -5,8 +5,8 @@ module.exports = (sequelize) => {
   // defino el modelo
   sequelize.define("result", {
     userUbication: {
-        type: DataTypes.STRING,
-        allowNull: false,
+        type: DataTypes.STRING(40),
+        allowNull: true,
     },
     team1Result: {
       type: DataTypes.INTEGER,
