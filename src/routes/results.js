@@ -31,8 +31,8 @@ router.get("/", async (req, res) => {
             where:{gameId: iterator.id}
         })
         currentGameResults.forEach(element => {
-            if(resultados[element.gameId].hasOwnProperty(element.winner)){
-                resultados[element.gameId][element.winner]++;
+            if(resultados[element.gameId - 6].hasOwnProperty(element.winner)){
+                resultados[element.gameId - 6][element.winner]++;
             }
         });
     }
