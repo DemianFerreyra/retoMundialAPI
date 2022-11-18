@@ -34,9 +34,10 @@ let capsEntries = entries.map((entry) => [
 ]);
 sequelize.models = Object.fromEntries(capsEntries);
 
-const { Game, Result, Champion } = sequelize.models;
+const { Game, Result, Champion, Simpleresult } = sequelize.models;
 
 Game.hasMany(Result);
+Game.hasMany(Simpleresult);
 
 module.exports = {
   ...sequelize.models,
